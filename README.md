@@ -5,4 +5,4 @@
 🚀 #ALX-Backend Specialisation
 
 **Projects includes**
-* [Pagination](0x00-pagination), [Caching](0x01-caching) and more.
+* [Pagination](./0x00-pagination), [Caching](./0x01-caching) and more.
