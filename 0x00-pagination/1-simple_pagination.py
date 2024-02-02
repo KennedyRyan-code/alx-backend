@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Implement a method named get_page that takes two integer arguments page
 with default value 1 and page_size with default value 10.
@@ -22,6 +22,7 @@ def index_range(page: int, page_size: int) -> tuple:
     end_index = page * page_size
     return start_index, end_index
 
+
 class Server:
     """Server class to paginate a database of popular baby names.
     """
@@ -43,7 +44,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Retrieves the specified page of the dataset based on page and page_size.
+        Retrieves the specified page of the dataset based on page & page_size.
 
         Parameters:
         - page (int): The 1-indexed page number.
@@ -52,8 +53,8 @@ class Server:
         Returns:
         - List[List]: The list of rows for the specified page.
         """
-        assert isinstance(page, int) and page > 0, "Page must be a positive integer"
-        assert isinstance(page_size, int) and page_size > 0, "Page size must be a positive integer"
+        assert isinstance(page, int) and page > 0, "a positive integer"
+        assert isinstance(page_size, int) and page_size > 0, "positive integer"
 
         start_index, end_index = index_range(page, page_size)
         dataset = self.dataset()
