@@ -45,7 +45,7 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """
-        Retrieves the specified page of the dataset based on page and page_size.
+        Retrieves the specified page of the dataset based on page & page_size.
 
         Parameters:
         - page (int): The 1-indexed page number.
@@ -64,7 +64,6 @@ class Server:
             return []  # Return an empty list if start index is out of range
 
         return dataset[start_index:end_index]
-
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """
