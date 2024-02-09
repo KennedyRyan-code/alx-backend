@@ -11,7 +11,7 @@ app = Flask(__name__)
 babel = Babel(app)
 
 
-class Config:
+class Config(object):
     """
     Config class for setting up language & timezone.
     """
